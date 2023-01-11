@@ -1,0 +1,214 @@
+{
+    "name": "OtherJobsRequest",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "options": {
+      "validateUpsert": true
+    },
+    "postgresql": {
+      "schema": "public",
+      "table": "other_jobs_request"
+    },
+    "properties": {
+      "id": {
+        "type": "Number",
+        "id": true,
+        "generated": true,
+        "required": false,
+        "length": null,
+        "precision": 64,
+        "scale": 0,
+        "postgresql": {
+          "columnName": "id",
+          "dataType": "bigint",
+          "dataLength": null,
+          "dataPrecision": 64,
+          "dataScale": 0,
+          "nullable": "NO"
+        },
+        "_selectable": false
+      },
+      "otherJobsId": {
+       "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 64,
+        "scale": 0,
+        "postgresql": {
+          "columnName": "other_jobs_id",
+          "dataType": "bigint",
+          "dataLength": null,
+          "dataPrecision": 64,
+          "dataScale": 0,
+          "nullable": "YES"
+        },
+        "_selectable": true
+     },
+       "status": {
+        "type": "String",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "status",
+          "dataType": "character varying",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+      "createdBy": {
+        "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 64,
+        "scale": 0,
+        "postgresql": {
+          "columnName": "created_by",
+          "dataType": "bigint",
+          "dataLength": null,
+          "dataPrecision": 64,
+          "dataScale": 0,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+      "createdDate": {
+        "type": "String",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "created_date",
+          "dataType": "timestamp with time zone",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+      "updatedBy": {
+        "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 64,
+        "scale": 0,
+        "postgresql": {
+          "columnName": "updated_by",
+          "dataType": "bigint",
+          "dataLength": null,
+          "dataPrecision": 64,
+          "dataScale": 0,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+      "updatedDate": {
+        "type": "String",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "updated_date",
+          "dataType": "timestamp without time zone",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+      "otherUserId": {
+       "type": "Number",
+        "required": false,
+        "length": null,
+        "precision": 64,
+        "scale": 0,
+        "postgresql": {
+          "columnName": "other_user_id",
+          "dataType": "bigint",
+          "dataLength": null,
+          "dataPrecision": 64,
+          "dataScale": 0,
+          "nullable": "YES"
+        },
+        "_selectable": true
+     },
+      "remark": {
+        "type": "String",
+        "required": false,
+        "length": null,
+        "precision": null,
+        "scale": null,
+        "postgresql": {
+          "columnName": "remark",
+          "dataType": "character varying",
+          "dataLength": null,
+          "dataPrecision": null,
+          "dataScale": null,
+          "nullable": "YES"
+        },
+        "_selectable": true
+      },
+    "driverId": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 64,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "driver_id",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": 64,
+        "dataScale": 0,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    },
+     "createdByName": {
+      "type": "String",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "created_by_name",
+        "dataType": "character varying",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      },
+      "_selectable": true
+    }
+    },
+    "validations": [],
+    "relations": {
+      "otherJobsDetails": {
+        "type": "belongsTo",
+        "model": "OtherJobsDetails",
+        "foreignKey": "otherJobsId"
+      },
+      "otherUser": {
+        "type": "belongsTo",
+        "model": "OtherUser",
+        "foreignKey": "otherUserId"
+      },
+      "driverDetails": {
+        "type": "belongsTo",
+        "model": "DriverDetails",
+        "foreignKey": "driverId"
+      }
+      
+    },
+    "acls": [],
+    "methods": {}
+  }
+  

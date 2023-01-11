@@ -1,0 +1,34 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postgres": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "Con_Driver_Database",
+    "password": "consrv@123",
+    "name": "postgres",
+    "connector": "postgresql",
+    "user": "postgres"
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "support@indian-drivers.com",
+          "pass": "Indian@1234"
+        }
+      }
+    ]
+  }
+}

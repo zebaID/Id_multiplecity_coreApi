@@ -1,0 +1,319 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "postgres",
+    "public": false
+  },
+  "CancellationReasons": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CustomerDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Cities": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CustomerFavouriteAddresses": {
+    "dataSource": "postgres",
+     "public": true
+  },
+  "PaymentModes": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "UserDevices": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "OutstationBookings": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "LocalBookings": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Collections": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "UserIdentities": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Roles": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "AgentDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "BookingInvites": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "ConUsers": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "UserRoles": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Bookings": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "Invoices": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "InvoiceHeads": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "InvoiceDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "FareMatrix": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "InvoiceSubHeads": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "LocalBoundries": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverPaymentCycles": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "DriverPaymentCycleDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "BookingPaymentTransaction": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "ExceptionOutstationCity": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "RateCard": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "PermanentDriverRequest": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "DriverAccountTransactions": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "DriverAccount": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "BookingAnalysisData": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverRechargeTransactions": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company1BillDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company1Items": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company2Items": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company1CustomerDetails": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company2CustomerDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company1CustomerBills": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company1CustomerRate": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company2CustomerRate": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company2CustomerBills": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "Company2BillDetails": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "BookingRating": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "RatingQuestions": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "BookingRatingDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverJobDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverJobRequest": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverAllocationReport": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverBlockReport": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "News": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CarType": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CarDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "CarOwner": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "States":{
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company2DriverDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "DriverAttendance": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "AppointedDriverHistoricalData": {
+    "dataSource": "postgres",
+    "public": true
+  },
+   "BookingDetails":{
+    "dataSource": "postgres",
+    "public": true
+  },
+   "OnlineTest":{
+    "dataSource": "postgres",
+    "public": true
+  },
+  "OtherJobsDetails": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "OtherJobsRequest": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "OtherUser": {
+    "dataSource": "postgres",
+    "public": true
+  },
+  "Company2MultipleBillDetails": {
+    "dataSource": "postgres",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}
